@@ -1,3 +1,3 @@
-# HTML CSS JS Tests | UOC
+# Web-Standards-and-Languages-Practices | UOC
 
-*Tests for basic HTML, CSS and JavaScript code for Web Standards and Languages :computer:*
+*Web Standards and Languages HTML, CSS and JavaScript practices :computer:*
