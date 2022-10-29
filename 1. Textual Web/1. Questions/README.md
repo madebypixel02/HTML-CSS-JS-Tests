@@ -9,7 +9,7 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/10/29 17:36:31 by aperez-b                                -->
+<!-- Updated: 2022/10/29 17:42:56 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -25,11 +25,11 @@
 
 ## Exercise 1
 
-**Statement**
+### Statement
 
 Give the necessary code to include the following image [https://www.publicdomainpictures.net/pictures/120000/velka/musiker-am-strand-von-havanna.jpg](https://www.publicdomainpictures.net/pictures/120000/velka/musiker-am-strand-von-havanna.jpg) with all necessary attributes. The image will be displayed with a width of ``400px`` and the proportional height. These measurements must be indicated in a CSS file. The title of the image and the caption is ``Musicians Caribbean Beach``. In addition, the image must be linked in such a way that the original image is opened when clicking on it. You can use codepen or another editor indicating the link where you have solved the question. It is not necessary to include the HTML headers.
 
-**Answer** \*
+### Answer \*
 
 
 ```HTML
