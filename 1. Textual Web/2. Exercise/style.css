@@ -10,19 +10,47 @@ html
     background-color: #ffffff;
     max-width: 1140px;
     margin: auto;
-    padding: 30px;
 }
 
 .header
 {
-    display: block;
+    background-image: url("./src/images/cabecera.png");
+    background-size: cover;
+    background-position: center;
+    height: 12rem;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.headerbar
+.content
+{
+    padding: 30px;
+}
+
+.footer
+{
+    position: relative;
+    height: 10rem;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+}
+
+.underline
 {
     width: 100%;
     height: 1.7em;
     border-bottom: 2px solid #62BC00;
+}
+
+.center
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 img
@@ -32,10 +60,10 @@ img
 
 h1
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h2, h3, dt
@@ -43,8 +71,17 @@ h2, h3, dt
     color: #62BC00;
 }
 
+a
+{
+    color: #62BC00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 .code
 {
+    position: relative;
+    height: 8rem;
     border: 2px solid #000000;
     color: #ff0000;
 }
@@ -56,7 +93,17 @@ li
 
 .list
 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 0.9em;
     color: #62BC00;
+}
+
+.description
+{
+    color: #62BC00;
+    font-weight: bold;
+    line-height: 3;
 }
 
 .list::before
@@ -77,9 +124,31 @@ figcaption, em
 a:hover
 {
     color: #284d00;
+    text-decoration: underline;
 }
 
-nav + a:hover
+.navigation
 {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    gap: 1px;
+}
+
+.nav_button
+{
+    flex: 1;
+    line-height: 3;
+    border: 2px solid #000000;
+    background-color: #62BC00;
     color: #ffffff;
+    text-align: center;
+}
+
+.nav_button:hover
+{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
 }
