@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
+        <meta name="author" content="Alejandro Pérez Bueno">
+        <meta name="description" content="A basic introduction to HTML and CSS best practices">
+        <meta name="keywords" content="HTML, CSS, Best Practices, guidelines, markup">
         <title>HTML and CSS Best Practices</title>
-        <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico"/>
-        <link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <h1>HTML and CSS Best Practices</h1>
+        <div class="header">
+            <img src="./src/images/cabecera.png" title="Header image" alt="Header image">
+            <h1>HTML and CSS Best Practices</h1>
+        </div>
         <nav>
-            <a href="https://github.com">Inicio</a>
-            <a href="https://github.com">UOC</a>
-            <a href="https://github.com">Diseño gráfico</a>
-            <a href="https://github.com">Contactar</a>
+            <a href="./index.html">Inicio</a>
+            <a target="_blank" href="https://uoc.edu">UOC</a>
+            <a target="_blank" href="https://www.rasmussen.edu/degrees/design/blog/what-is-graphic-design">Diseño gráfico</a>
+            <a href="mailto:aperez-b@uoc.edu">Contactar</a>
         </nav>
         <h2>HTML and CSS Best Practices</h2>
-        <p>HTML best practices are rules that help you create websites that are easy to maintain and read.</p>
+        <p><u>HTML</u> best practices are rules that help you create websites that are easy to maintain and read.</p>
         <figure>
-            <img src="./src/images/trabajando.jpg">
+            <img src="./src/images/trabajando.jpg" title="People working" alt="People working">
             <figcaption>People working</figcaption>
         </figure>
         <h3>Here are some guidelines to keep in mind when building an HTML -based website:</h3>
@@ -56,12 +62,12 @@
             <dt>Don't Use Inline-Styles</dt>
             <dd>Well, there are arguments on the web about this: some aretelling you never to use inline styles, while others are arguing that it can beuseful in some cases.In my opinion, the best practice is actually not usinginline styles. I will focus here on why we shouldn't.
             <ul>
-                <li>test</li>
-                <p>According to the separation of concerns principle, design(CSS ), content (HTML ) and logic (JavaScript) should be separated for reasonslike better readability and maintenance.</p>
-                <li>Difficultiesin Search</li>
-                <p>Another problem with using inline-styles is that we can'tsearch for them. So when we need to make a change on styling, we normally lookfor CSS selectors of the HTML element.</p>
-                <li>Specificity/ Overwrite Issues</li>
-                <p>Inline-Styles have the highest specificity among CSS selectors (when we don't count !important tags).</p>
+                <li>Separationof Concerns<br>
+                According to the separation of concerns principle, design(CSS ), content (HTML ) and logic (JavaScript) should be separated for reasonslike better readability and maintenance.</li>
+                <li>Difficultiesin Search<br>
+                Another problem with using inline-styles is that we can'tsearch for them. So when we need to make a change on styling, we normally lookfor CSS selectors of the HTML element.</li>
+                <li>Specificity/ Overwrite Issues<br>
+                Inline-Styles have the highest specificity among CSS selectors (when we don't count !important tags).</li>
             </ul>
             </dd>
         </dl>
