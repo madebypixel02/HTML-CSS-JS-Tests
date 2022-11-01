@@ -71,7 +71,7 @@ html
     padding-right: 30px;
     padding-bottom: 30px;
     display: flex;
-    gap: 1px;
+    gap: 3px;
 }
 
 .nav_button
