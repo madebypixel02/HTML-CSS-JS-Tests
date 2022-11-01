@@ -1,8 +1,32 @@
+@font-face
+{
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.woff2") format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Italic.woff2") format(woff2);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: "Orbitron";
+    src: url("./fonts/Orbitron-ExtraBold.woff2") format(woff2);
+    font-weight: bold;
+    font-style: normal;
+}
+
 html
 {
     background-color: #bfbfbf;
     font-size: 16px;
-    
+    font-family: Roboto;
 }
 
 .page
@@ -14,13 +38,14 @@ html
 
 .header
 {
-    background-image: url("./src/images/cabecera.png");
-    background-size: cover;
-    background-position: center;
-    height: 12rem;
+    display: flex;
+    font-family: Orbitron;
+    background-image: url("./images/cabecera.png");
+    height: 15rem;
     position: relative;
     text-align: center;
     color: white;
+    line-height: 3;
 }
 
 .content
@@ -30,18 +55,48 @@ html
 
 .footer
 {
+    font-family: Orbitron;
     position: relative;
-    height: 10rem;
+    font-weight: 900;
+    height: 15rem;
     background-color: #000000;
     text-align: center;
     color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.navigation
+{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    gap: 1px;
+}
+
+.nav_button
+{
+    flex: 1;
+    line-height: 3;
+    border: 2px solid #000000;
+    background-color: #62BC00;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.nav_button:hover
+{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .underline
 {
     width: 100%;
-    height: 1.7em;
-    border-bottom: 2px solid #62BC00;
+    height: 2em;
+    border-bottom: 3px solid #62BC00;
 }
 
 .center
@@ -51,6 +106,39 @@ html
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.list
+{
+    font-weight: bold;
+    line-height: 3;
+    font-size: 0.9em;
+    color: #62BC00;
+}
+
+.list::before
+{
+    content: "\2022";
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: black;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.description
+{
+    color: #62BC00;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.code
+{
+    padding: 30px 10em 50px 10em;
+    border: 2px solid #000000;
+    color: #ff0000;
 }
 
 img
@@ -78,12 +166,20 @@ a
     font-weight: bold;
 }
 
-.code
+a:hover
 {
-    position: relative;
-    height: 8rem;
-    border: 2px solid #000000;
-    color: #ff0000;
+    color: #284d00;
+    text-decoration: underline;
+}
+
+u
+{
+    font-style: italic;
+}
+
+p, li
+{
+    padding-right: 70px;
 }
 
 li
@@ -91,64 +187,7 @@ li
     list-style: none;
 }
 
-.list
-{
-    font-weight: bold;
-    line-height: 3;
-    font-size: 0.9em;
-    color: #62BC00;
-}
-
-.description
-{
-    color: #62BC00;
-    font-weight: bold;
-    line-height: 3;
-}
-
-.list::before
-{
-    content: "\2022";
-    font-weight: bold;
-    display: inline-block;
-    color: black;
-    width: 1em;
-    margin-left: -1em;
-}
-
 figcaption, em
 {
     color: #949090;
-}
-
-a:hover
-{
-    color: #284d00;
-    text-decoration: underline;
-}
-
-.navigation
-{
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    display: flex;
-    gap: 1px;
-}
-
-.nav_button
-{
-    flex: 1;
-    line-height: 3;
-    border: 2px solid #000000;
-    background-color: #62BC00;
-    color: #ffffff;
-    text-align: center;
-}
-
-.nav_button:hover
-{
-    text-decoration: none;
-    color: #000000;
-    background-color: #ffffff;
 }
