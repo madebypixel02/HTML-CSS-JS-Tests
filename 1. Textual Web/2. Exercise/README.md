@@ -16,21 +16,21 @@ xdg-open index.html
 
 <p align=center>
 
-<a target="_blank" href="https://validator.w3.org/nu/#file">
+<a href="https://validator.w3.org/nu/#file">
     <img style="border:0;width:88px;height:31px"
         src="http://www.w3.org/Icons/valid-html401-blue.png"
         alt="Valid HTML!" /></a>
-<a target="_blank" href="https://validator.w3.org/nu/#file">
+<a href="https://validator.w3.org/nu/#file">
     <img style="border:0;width:88px;height:31px"
         src="http://www.w3.org/Icons/valid-html401.png"
         alt="Valid HTML!" /></a>
-<a target="_blank" href="http://jigsaw.w3.org/nu/check/referer">
+<a href="https://jigsaw.w3.org/css-validator/#validate_by_upload">
     <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        src="http://www.w3.org/Icons/valid-css-blue.png"
         alt="Valid CSS!" /></a>
-  <a target="_blank" href="http://jigsaw.w3.org/css-validator/check/referer">
+  <a href="https://jigsaw.w3.org/css-validator/#validate_by_upload">
         <img style="border:0;width:88px;height:31px"
-            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            src="http://www.w3.org/Icons/valid-css.png"
             alt="Valid CSS!" /></a>
 </p>
 
