@@ -101,12 +101,12 @@ Generate the necessary HTML and CSS code to create the lists that are shown belo
     <li>list a2</li>
     <ol>
         <li>list b1</li>
-        <ul>
+        <li><ul>
             <li>list c1</li>
             <li>list c2</li>
             <li>list c3</li>
             <li>list c4</li>
-        </ul>
+        </ul></li>
         <li>list b2</li>
         <li>list b3</li>
         <li>list b4</li>
