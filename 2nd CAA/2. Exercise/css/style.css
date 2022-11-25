@@ -1,0 +1,299 @@
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 10px;
+    max-width: 1200px;
+    width: 80vw;
+    font-family: Arial;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen-reader-text
+{
+    height: 0;
+    width: 0;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+p,
+q,
+a,
+dd,
+ul
+{
+    font-family: Georgia;
+}
+
+header
+{
+    position: relative;
+    background-image: url(../img/header.jpg);
+    background-position: left 25%;
+    background-size: cover;
+    border-radius: 1.5rem;
+    height: 10rem;
+}
+
+h1
+{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    color: white;
+    text-align: center;
+}
+
+nav
+{
+    height: 6.5rem;
+    background-color: #e9791a;
+    border-radius: 1.5rem;
+    position: relative;
+    text-align: center;
+}
+
+nav ul
+{
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav li
+{
+    display: inline-block;
+    width: 6rem;
+    text-align: center;
+}
+
+nav li:not(:last-child)
+{
+    margin-right: 0.6rem;
+}
+
+nav a
+{
+    display: inline-block;
+    line-height: 3.5rem;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    color: white;
+    border: 0.1rem solid #4433ff;
+    background-color: #4433ff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover,
+nav a:active
+{
+    outline: none;
+    color: #e9791a;
+    background-color: white;
+}
+
+h2,
+h3
+{
+    margin: 1.5rem;
+}
+
+h2
+{
+    font-size: 2.2rem;
+    color: #077ce6;
+}
+
+h3
+{
+    font-size: 1.7rem;
+    color: #11b2e6;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+.author
+{
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    margin-right: 0;
+}
+
+.author span
+{
+    color: #e9791a;
+    font-weight: bold;
+}
+
+h2 ~ p
+{
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 9rem;
+    margin-right: 11rem;
+    font-size: 1.1rem;
+}
+
+section.border
+{
+    margin-top: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 1.5rem;
+    overflow: auto;
+}
+
+blockquote
+{
+    position: relative;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 16rem;
+}
+
+blockquote::before
+{
+    position: absolute;
+    content: open-quote;
+    top: 0;
+    left: 0;
+    transform: translate(-65%, -25%);
+    font-size: 4.5rem;
+    color: #11b2e6;
+}
+
+p,
+blockquote
+{
+    margin: 0.8rem;
+    text-indent: 3rem;
+}
+
+h2 ~ p,
+blockquote,
+em
+{
+    font-style: italic;
+    font-family: Georgia;
+
+}
+
+dl
+{
+    margin-left: 7rem;
+}
+
+dd
+{
+    padding-left: 2.5rem;
+    text-indent: -2rem;
+    padding-right: 16rem;
+    padding-top: 0.6rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+dt
+{
+    font-weight: bold;
+}
+
+.list,
+.list_nest1
+{
+    margin: 1rem 1rem 1rem 4rem;
+}
+
+.list_nest1
+{
+    list-style-type: square;
+}
+
+li.atom
+{
+    list-style-type: none;
+}
+
+li.atom::before
+{
+    content: "\269B";
+    font-weight: bold;
+    padding-right: 0.2rem;
+}
+
+figure img
+{
+    margin: 0 auto;
+    display: block;
+    width: 45%;
+}
+
+figcaption
+{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+span.underline
+{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+h3 span.underline
+{
+    text-underline-offset: 0.3rem;
+}
+
+footer
+{
+    display: flex;
+    height: 7rem;
+    font-size: 1rem;
+    overflow: hidden;
+    color: white;
+    background-color: #4433ff;
+    border-radius: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p
+{
+    text-indent: 0;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 85%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer a
+{
+    color: white;
+}

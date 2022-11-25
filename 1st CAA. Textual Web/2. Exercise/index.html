@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="utf-8">
+      <meta name="author" content="Alejandro Pérez Bueno">
+      <meta name="description" content="A basic introduction to HTML and CSS best practices">
+      <meta name="keywords" content="HTML, CSS, Best Practices, guidelines, markup">
+      <title>HTML and CSS Best Practices</title>
+      <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+      <link rel="stylesheet" href="./styles.css">
+   </head>
+   <body>
+      <div class="page">
+         <div class="header">
+            <h1 class="center" >HTML and CSS Best Practices</h1>
+         </div>
+         <div class="content">
+            <nav class="navigation">
+               <a class="nav_button" href="./index.html">INICIO</a>
+               <a class="nav_button" target="_blank" href="https://uoc.edu">UOC</a>
+               <a class="nav_button" target="_blank" href="https://www.rasmussen.edu/degrees/design/blog/what-is-graphic-design">DISEÑO GRÁFICO</a>
+               <a class="nav_button" href="mailto:aperez-b@uoc.edu">CONTACTAR</a>
+            </nav>
+            <div class="underline"><h2>HTML Best Practices</h2></div>
+            <p><u>HTML</u> best practices are rules that help you create websites that are easy to maintain and read.</p>
+            <figure>
+               <img src="./images/trabajando.jpg" title="People working" alt="People working">
+               <figcaption><em>People working</em></figcaption>
+            </figure>
+            <h3>Here are some guidelines to keep in mind when building an HTML -based website:</h3>
+            <p>Use only one <em>&lt;h1&gt;</em> element for one code sheet</p>
+            <p>There are six different heading tags in <u>HTML</u> , <em>&lt;h1&gt;</em> to <em>&lt;h6&gt;</em>. The <em>&lt;h1&gt;</em> tag is the main heading (subject of the web page) while the <em>&lt;h6&gt;</em> tag is the least important heading.</p>
+            <p>The <em>&lt;h1&gt;</em> tag is bigger than the <em>&lt;h2&gt;</em> tag, the <em>&lt;h2&gt;</em> tag is bigger than the <em>&lt;h3&gt;</em>tag, all the way down to the <em>&lt;h6&gt;</em> tag. Each of the headings decreases in size according to its importance.</p>
+            <p>It is important to avoid using more than one <em>&lt;h1&gt;</em> element for one code sheet. Having only one <em>&lt;h1&gt;</em> element on a web page is vital for Search Engine Optimization (SEO). It helps search engines understand what a web page is all about (the main idea of a web page).</p>
+            <h3>Do not skip heading levels in HTML</h3>
+            <p>When using the header tags, it's vital to proceed from <em>&lt;h1&gt;</em> to <em>&lt;h2&gt;</em> to <em>&lt;h3&gt;</em> to <em>&lt;h4&gt;</em> and so on...</p>
+            <p>Don't use <em>&lt;h1&gt;</em> and then jump to <em>&lt;h3&gt;</em> when using header tags. It's difficult for web visitors using a screen reader to understand the contents of your web page when you skip heading levels.</p>
+            <p>A screen reader is a technology that helps people who have difficulty seeing access and interact with digital content, like websites or applications via audio or touch. The main users of screen readers are people who are blind or have very limited vision.</p>
+            <p>You can read a little introduction to screen readers here.</p>
+            <p>Don't do this:</p>
+            <div class="code"><code>
+                     &lt;h1&gt;Coding is fun&lt;/h1&gt;<br>
+                     &lt;h3&gt;It is always better when you have fun coding&lt;/h3&gt;<br>
+                     &lt;h5&gt;Consistency is Key&lt;/h5&gt;<br>
+                  </code></div>
+            <p>Do this instead:</p>
+            <div class="code"><code>
+                     &lt;h1&gt;Can coding be fun?&lt;/h1&gt;<br>
+                     &lt;h2&gt;The more you code the better you become&lt;/h2&gt;<br>
+                     &lt;h3&gt;Coding is fun&lt;/h3&gt;<br>
+                  </code></div>
+            <p>It's important to remember that just because your code works doesn't mean you're following best practices.</p>
+            <p>This is why I always recommend using the <a target="_blank" href="https://validator.w3.org/">W3c markup validation service</a> to double-check your codes.</p>
+            <p>You can double-check your code by copying its URL and pasting it on the site or uploading your <u>HTML</u> file.</p>
+            <p>You can read the full article at <a target="_blank" href="https://www.freecodecamp.org/news/html-best-practices"><i>https://www.freecodecamp.org/news/html-best-practices</i></a></p>
+            <div class="underline"><h2>Important Tips for Writing Better CSS</h2></div>
+            <p>One of the biggest issues in programming is dealing withmaintenance. In a real-world scenario, we don't always start developingprojects from scratch. Mostly, we are assigned (or take) a project that hasalready been written maybe a couple of years before or even longer.</p>
+            <p>To work efficiently on that project, first we need tounderstand the source code. This is the point when we immediately realize theimportance of clean code. As developers, we must try to write ourcode as cleanly as possible.This is also the case for <u>CSS</u> .</p>
+            <p>There are some points we needto pay attention to while writing <u>CSS</u>. In this post, I would like to share someof the most important ones with you. I believe these tips will help you toimprove the quality of your <u>CSS</u> code.So let's begin...</p>
+            <ul>
+               <li class="description">DRY</li>
+               <li>DRY stands for "Don't Repeat Yourself". This is ageneral software development principle and can be applied in any programminglanguage, as well as in <u>CSS</u> . As we can understand from its name, DRY aims toavoid or reduce repetition as much as possible.</li>
+               <li class="description">Don't Use Inline-Styles</li>
+               <li>Well, there are arguments on the web about this: some aretelling you never to use inline styles, while others are arguing that it can beuseful in some cases.In my opinion, the best practice is actually not usinginline styles. I will focus here on why we shouldn't.
+               <ul>
+                  <li class="list">Separationof Concerns</li>
+                  <li>According to the separation of concerns principle, design(<u>CSS</u> ), content (<u>HTML</u> ) and logic (JavaScript) should be separated for reasonslike better readability and maintenance.</li>
+                  <li class="list">Difficultiesin Search</li>
+                  <li>Another problem with using inline-styles is that we can'tsearch for them. So when we need to make a change on styling, we normally lookfor <u>CSS</u> selectors of the <u>HTML</u> element.</li>
+                  <li class="list">Specificity/ Overwrite Issues</li>
+                  <li>Inline-Styles have the highest specificity among <u>CSS</u> selectors (when we don't count !important tags).</li>
+               </ul>
+               </li>
+            </ul>
+            <p>You can read the full article at <a target="_blank" href="https://www.freecodecamp.org/news/7-important-tips-for-writing-better-css"><i>https://www.freecodecamp.org/news/7-important-tips-for-writing-better-css</i></a></p>
+         </div>
+         <div class="footer"><p class="center">Alejandro Pérez Bueno | Practice <u>UOC</u> 2022</p></div>
+      </div>
+   </body>
+</html>

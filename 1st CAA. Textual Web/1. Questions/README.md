@@ -9,21 +9,21 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/10/29 17:42:56 by aperez-b                                -->
+<!-- Updated: 2022/11/17 11:56:20 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
-# Part 1. Exercises
+# Part 1. Questions
 
 ### Table of Contents
 
-- [Exercise 1](#exercise-1)
-- [Exercise 2](#exercise-2)
-- [Exercise 3](#exercise-3)
-- [Exercise 4](#exercise-4)
-- [Exercise 5](#exercise-5)
+- [Question 1](#question-1)
+- [Question 2](#question-2)
+- [Question 3](#question-3)
+- [Question 4](#question-4)
+- [Question 5](#question-5)
 
-## Exercise 1
+## Question 1
 
 ### Statement
 
@@ -67,7 +67,7 @@ html
 ```
 \* Coded and tested locally (using vim and a web browser), without any websites.
 
-## Exercise 2
+## Question 2
 
 ### Statement
 
@@ -78,13 +78,13 @@ Explain, in your own words, the difference between the em, pixel, and rem units 
 When setting the font size, we can use many numbering formats. The simplest one is specifying the size of a text element in **pixels** (e.g. 12px). This applies the specific size to font sizes inside the css ruleset, ignoring parent font sizes. The **em** unit specifies the font size in relation to the parent font size. This is useful to inherit the previous font size thanks to CSS' cascading property. Lastly, the **rem** unit is very similar to the **em** one, but the font size is related to the root font size, i.e., the font size defined by default or manually for the general document. For example, if our base size is ``12px`` and we set a specific header to use ``2rem``, then our header will be of size ``24px``.
 
 
-## Exercise 3
+## Question 3
 
 ### Statement
 
 Generate the necessary HTML and CSS code to create the lists that are shown below:
 
-![Sample List - Exercise 3](https://user-images.githubusercontent.com/40824677/198830060-5ad11e8d-c311-4f35-9a59-b0c1b2e4bb80.jpeg)
+![Sample List - Question 3](https://user-images.githubusercontent.com/40824677/198830060-5ad11e8d-c311-4f35-9a59-b0c1b2e4bb80.jpeg)
 
 ### Answer \*
 
@@ -125,7 +125,7 @@ ul + ol + ul
 ```
 \* Coded and tested locally (using vim and a web browser), without any websites.
 
-## Exercise 4
+## Question 4
 
 ### Statement
 
@@ -143,7 +143,7 @@ Explain the difference between block elements and inline elements. Describe the 
 - **nav**: ``(block)`` Creates links used mainly for navigation. Used to link the various menus on a site.
 - **address**: ``(block)`` Adds information about a person including contact information (email, personal URL, phone number, social media, and even the actual address).
 
-## Exercise 5
+## Question 5
 
 ### Statement
 
