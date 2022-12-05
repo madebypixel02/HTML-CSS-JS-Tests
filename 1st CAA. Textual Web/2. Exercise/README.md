@@ -9,13 +9,13 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/11/25 14:42:33 by aperez-b                                -->
+<!-- Updated: 2022/12/05 17:03:36 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
 # Part 2. Exercise
 
-The goal of this exercise is to replicate [this website](https://github.com/madebypixel02/Web-Standards-and-Languages-Practices/blob/main/1st%20CAA.%20Textual%20Web/2.%20Exercise/other/HTML_and_CSS_Best_Practices.png), with the information on [this folder](https://github.com/madebypixel02/Web-Standards-and-Languages-Practices/tree/main/1st%20CAA.%20Textual%20Web/2.%20Exercise/other).
+The goal of this exercise is to replicate [this website](./other/HTML_and_CSS_Best_Practices.png), with the information on [this folder](./other).
 
 You can clone the code of of the project, and simply open the *HTML* file to see how the output page looks.
 

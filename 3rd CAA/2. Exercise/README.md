@@ -9,13 +9,12 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/12/05 17:05:21 by aperez-b                                -->
+<!-- Updated: 2022/12/05 17:05:52 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
-# Part 2. Exercise
-
-The goal of this exercise is to replicate [this website](./other/index.png), with the information on [this folder](./other).
+# Part 2. Exerproduct-list
+The goal of this exercise is to replicate [this website](./other/product-list.png), with the information on [this folder](./other).
 
 You can clone the code of of the project, and simply open the *HTML* file to see how the output page looks.
 
@@ -23,8 +22,8 @@ Here is how you can do that on ``Linux``
 
 ```shell
 git clone https://github.com/madebypixel02/Web-Standards-and-Languages-Practices.git
-cd Web-Standards-and-Languages-Practices/2nd\ CAA/2.\ Exercise
-xdg-open index.html
+cd Web-Standards-and-Languages-Practices/3rd\ CAA/2.\ Exercise
+xdg-open product-list.html
 ```
 
 * The code for this site in both *HTML* and *CSS* is validated by the [W3C](https://www.w3.org/)

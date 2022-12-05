@@ -9,13 +9,13 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/12/05 17:05:21 by aperez-b                                -->
+<!-- Updated: 2022/12/05 17:02:10 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
 # Part 2. Exercise
 
-The goal of this exercise is to replicate [this website](./other/index.png), with the information on [this folder](./other).
+The goal of this exercise is to replicate [this website](./2.%20Exercise/other/index.png), with the information on [this folder](./2.%20Exercise/other).
 
 You can clone the code of of the project, and simply open the *HTML* file to see how the output page looks.
 
