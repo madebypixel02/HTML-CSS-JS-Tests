@@ -9,7 +9,7 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/12/05 17:03:36 by aperez-b                                -->
+<!-- Updated: 2022/12/05 17:10:12 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
@@ -29,7 +29,7 @@ xdg-open index.html
 
 * The code for this site in both *HTML* and *CSS* is validated by the [W3C](https://www.w3.org/)
 
-<p align=center>
+<div align=center>
 
 <a href="https://validator.w3.org/nu/#file">
     <img style="border:0;width:88px;height:31px"
@@ -47,6 +47,6 @@ xdg-open index.html
         <img style="border:0;width:88px;height:31px"
             src="http://www.w3.org/Icons/valid-css.png"
             alt="Valid CSS!" /></a>
-</p>
+</div>
 
 Nov 1st, 2022
