@@ -9,11 +9,12 @@
 <!-- By: aperez-b <aperez-b@uoc.edu>                     +@@@@@@@* +@@+      -->
 <!--                                                       :-==:.  -@@#      -->
 <!-- Created: 2022/10/29 11:53:10 by aperez-b                       +@@@%@   -->
-<!-- Updated: 2022/12/05 17:10:36 by aperez-b                                -->
+<!-- Updated: 2022/12/06 11:18:04 by aperez-b                                -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
-# Part 2. Exerproduct-list
+# Part 2. Exercise
+
 The goal of this exercise is to replicate [this website](./other/product-list.png), with the information on [this folder](./other).
 
 You can clone the code of of the project, and simply open the *HTML* file to see how the output page looks.
@@ -48,4 +49,4 @@ xdg-open product-list.html
             alt="Valid CSS!" /></a>
 </div>
 
-Nov 1st, 2022
+Dec 6th, 2022
