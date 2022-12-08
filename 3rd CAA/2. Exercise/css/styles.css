@@ -309,13 +309,21 @@ h1
     height: 50px;
     display: flex;
     justify-content: center;
-    gap: 60px;
 }
 
 .footer-policy li
 {
+    text-align: center;
     height: 100%;
     display: inline-block;
+}
+
+.footer-policy li:not(:first-child) a:before
+{
+    content: "\2022";
+    padding-right: 30px;
+    color: white;
+    font-size: inherit;
 }
 
 .footer-policy a
@@ -323,6 +331,11 @@ h1
     line-height: 50px;
     display: block;
     color: white;
+}
+
+.footer-policy li:not(:last-child) a
+{
+    padding-right: 30px;
 }
 
 .footer-policy a:hover, .footer-policy a:active, .footer-policy a:focus
