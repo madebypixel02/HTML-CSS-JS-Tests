@@ -209,6 +209,8 @@ nav a:hover, nav a:active, nav a:focus,
     text-align: right;
     grid-template-columns: 3fr 1fr;
     line-height: 60px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .pen-result .result-cart
