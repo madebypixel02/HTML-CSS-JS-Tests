@@ -135,9 +135,9 @@ nav a:hover, nav a:active, nav a:focus,
     grid-template-columns: 1fr 4fr;
 }
 
-#main, h1, .category, table
+#main, h1, .category, table, .footer-contact
 {
-    min-width: 400px;
+    min-width: 800px;
     max-width: 1170px;
     margin: 20px auto 20px auto;
 }
@@ -441,7 +441,6 @@ tr:not(:last-child)
 .footer-contact
 {
     width: 60%;
-    margin: 30px auto 30px auto;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 0 2fr;
