@@ -1,3 +1,11 @@
+@font-face
+{
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-VariableFontWeight.woff2") format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *::after,
 *::before
@@ -21,12 +29,29 @@ body
     min-width: 400px;
     max-width: 1170px;
     margin: 0 auto 0 auto;
+    font-family: 'Mulish';
+}
+
+h1
+{
+    font-size: 32px;
+}
+
+.result-header span
+{
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+h1, .result-link, .sidebar a, .price, .pager-n, .signup-section a
+{
+    font-family: 'Open Sans';
+    font-stretch: condensed;
 }
 
 header
 {
     position: relative;
-    background-color: #F3702A;
     height: 100px;
 }
 
@@ -48,6 +73,10 @@ nav
 {
     position: relative;
     height: 40px;
+}
+
+nav, .category
+{
     background-color: #EAEBE9;
 }
 
@@ -70,7 +99,6 @@ nav li
 nav a
 {
     display: inline-block;
-    color: black;
     line-height: 40px;
     font-weight: bold;
 }
@@ -80,16 +108,25 @@ nav a, .sidebar a
     font-size: 22px;
 }
 
-nav a:hover, nav a:active, nav a:focus
+header
+{
+    background-color: #F3702A;
+}
+
+nav a:hover, nav a:active, nav a:focus,
+.sidebar a, .sidebar a:hover::after, .sidebar a:focus::after, .sidebar a:active::after,
+.orange,
+.result-link,
+.footer-phone
 {
     color: #F3702A;
 }
 
-h1
+.result-header
 {
     margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 45px;
+    padding-left: 15px;
     font-weight: normal;
 }
 
@@ -97,17 +134,36 @@ h1
 {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    margin: 20px 30px 20px 30px;
+}
+
+#main, h1, .category
+{
+    margin: 20px 50px 20px 50px;
+}
+
+.category
+{
+    padding-left: 10px;
+    line-height: 30px;
 }
 
 .pen-result
 {
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 1px solid #736D75;
-    height: 180px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.8fr 2fr 1fr;
+}
+
+.big-result
+{
+    display: grid;
+    overflow: hidden;
+    border-radius: 10px;
+    grid-template-columns: 1.1fr 2fr 1.1fr;
+    height: auto;
+    border: none;
 }
 
 .pen-result:not(:last-child)
@@ -117,7 +173,7 @@ h1
 
 .result-image
 {
-    margin: 10px;
+    margin: 15px;
     position: relative;
 }
 
@@ -131,25 +187,58 @@ h1
 
 .result-price
 {
+    padding-left: 20px;
+    padding-right: 20px;
     position: relative;
+    color: white;
     background-color: #736D75;
 }
 
-.result-cart
+.big-result .result-price
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.big-result .result-action
+{
+    display: grid;
+    text-align: right;
+    grid-template-columns: 3fr 1fr;
+    line-height: 60px;
+}
+
+.pen-result .result-cart
 {
     position: absolute;
     right: 5%;
     bottom: 5%;
 }
 
+.pen-result .price
+{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
 .price
 {
-    right: 5%;
     margin: 5px;
-    position: absolute;
     font-size: 60px;
     font-weight: bold;
+}
+
+.big-result .price::after
+{
+    content: "Unit";
+    padding-left: 10px;
     color: white;
+    font-size: 16px;
+    font-family: Mulish;
+    font-weight: normal;
 }
 
 .sidebar
@@ -174,14 +263,8 @@ h1
     position: absolute;
     right: 5%;
     content: "\271A";
-    color: #736D75;
     font-size: inherit;
     font-weight: inherit;
-}
-
-.sidebar a:hover::after, .sidebar a:focus::after, .sidebar a:active::after
-{
-    color: #F3702A;
 }
 
 .sidebar a
@@ -190,7 +273,6 @@ h1
     line-height: 40px;
     padding-left: 5px;
     font-weight: bold;
-    color: #F3702A;
 }
 
 .pager
@@ -214,16 +296,13 @@ h1
     width: 60px;
     font-size: 18px;
     font-weight: bold;
-    color: black;
-}
-
-.pager-n:focus, .pager-n:hover, .pager-n:active
-{
-    color: #736D75;
 }
 
 .sidebar a:focus, .sidebar a:hover, .sidebar a:active,
-.result-link:focus, .result-link:hover, .result-link:active
+.result-link:focus, .result-link:hover, .result-link:active,
+.footer-phone:focus, .footer-phone:hover, .footer-phone:active,
+.pager-n,
+nav a
 {
     color: black;
 }
@@ -235,11 +314,19 @@ h1
 
 .result-link
 {
-    margin-bottom: 20px;
     font-weight: bold;
     font-size: 23px;
-    color: #F3702A;
     display: block;
+}
+
+.result-features, .result-body p:not(:first-child)
+{
+    margin: 10px auto 10px auto;
+}
+
+.result-body p:first-child
+{
+    font-size: 20px;
 }
 
 .result-features
@@ -249,8 +336,103 @@ h1
 
 .result-features li::before
 {
-    content: "\2B1D";
-        padding-right: 5px;
+    content: "\00B7";
+    padding-right: 5px;
+}
+
+table
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 2px solid #EAEBE9;
+    margin: 50px;
+}
+
+thead
+{
+    border: 2px solid #EAEBE9;
+    background-color: #EAEBE9;
+}
+
+th
+{
+    text-align: left;
+    padding: 5px;
+}
+
+td
+{
+    vertical-align: top;
+    padding: 5px 5px 5px 10px;
+    width: 25%;
+}
+
+td:not(:last-child)
+{
+    border-right: 1px dashed black;
+}
+
+tr:not(:last-child)
+{
+    border-bottom: 1px dashed black;
+}
+
+.signup-section
+{
+    height: 250px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+
+.signup-section::before
+{
+    content: "";
+    width: 100%;
+    background-image: url(../img/Black-Twist-Pen-on-Notebook-pexels-mohammad-danish.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: bottom;
+    position: absolute;
+    filter: contrast(50%) brightness(60%);
+    height: 250px;
+}
+
+.signup-section p
+{
+    font-size: 30px;
+    position: relative;
+    text-align: center;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.signup-section a
+{
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    border-radius: 5px;
+    background-color: #F3702A;
+}
+
+.signup-section a:hover, .signup-section a:active
+{
+    background-color: #EAEBE9;
+    color: black;
+}
+
+.signup-section a:focus
+{
+    color: white;
+    background-color: black;
 }
 
 .footer-contact
@@ -282,13 +464,18 @@ h1
 .footer-phone
 {
     font-size: 23px;
-    color: #F3702A;
 }
 
 .vl
 {
     height: 100%;
-    border-left: 2px solid #EAEBE9;
+    border-left: 1px solid #EAEBE9;
+}
+
+.hl
+{
+    margin-top: 20px;
+    border-top: 1px dotted white;
 }
 
 .footer-social
@@ -306,7 +493,7 @@ h1
 .footer-policy
 {
     background-color: #272F2E;
-    height: 50px;
+    height: 60px;
     display: flex;
     justify-content: center;
 }
@@ -320,15 +507,14 @@ h1
 
 .footer-policy li:not(:first-child) a:before
 {
-    content: "\2022";
+    content: "\2219";
     padding-right: 30px;
     color: white;
-    font-size: inherit;
 }
 
 .footer-policy a
 {
-    line-height: 50px;
+    line-height: 60px;
     display: block;
     color: white;
 }
@@ -338,7 +524,9 @@ h1
     padding-right: 30px;
 }
 
-.footer-policy a:hover, .footer-policy a:active, .footer-policy a:focus
+.footer-policy a:hover, .footer-policy a:active, .footer-policy a:focus,
+.pager-n:focus, .pager-n:hover, .pager-n:active,
+.sidebar a::after
 {
     color: #736D75;
 }
