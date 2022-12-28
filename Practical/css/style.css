@@ -1,0 +1,619 @@
+@font-face
+{
+    font-family: "Epilogue";
+    src: url("../fonts/Epilogue-VariableFont_wght.woff2") format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: "Epilogue";
+    src: url("../fonts/Epilogue-Italic-VariableFont_wght.woff2") format(woff2);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face
+{
+    font-family: "Courgette";
+    src: url("../fonts/Courgette-Regular.woff2") format(woff2);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::after,
+*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+footer li
+{
+    list-style-type: none;
+}
+
+html, body, iframe
+{
+    font-family: Epilogue;
+    background-color: #FDF0E9;
+    width: 100%;
+    color: #28293E;
+}
+
+h1
+{
+    font-size: 3rem;
+}
+
+h2
+{
+    font-size: 2.6rem;
+}
+
+h2.left
+{
+    padding-right: 50rem;
+}
+
+p, h1, h2, h3
+{
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+h1.italic, h2.italic
+{
+    font-family: Courgette;
+}
+
+p
+{
+    font-size: 1.2rem;
+}
+
+img
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.border
+{
+    border: 1px solid black;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
+
+.container
+{
+    overflow: hidden;
+    width: 1170px;
+    margin: 0 auto 0 auto;
+    padding: 2rem;
+}
+
+header .container
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.screen-reader-text
+{
+    height: 0;
+    width: 0;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+/* Buttons */
+.button
+{
+    line-height: 1rem;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border-radius: 5px;
+}
+
+.button, .button a, .bold, th, tr > td:first-child
+{
+    font-weight: bold;
+}
+
+.white.button:hover, .white.button:active, .white.button:focus,
+.red.button:hover, .red.button:active, .red.button:focus,
+.contact div a:hover, .contact div a:active, .contact div a:focus
+{
+    transition: background-color 200ms linear;
+    background-color: black;
+    color: white;
+}
+
+/* Colors combinations for different areas based on class */
+.red, .red a
+{
+    color: #C43721;
+}
+
+a.red
+{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.circle
+{
+    transition: background-color 200ms linear;
+    background-color: #C43721;
+    border-radius: 20rem;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    display: block;
+}
+
+.darkblue .red
+{
+    color: #EF6D58;
+}
+
+.darkblue, .darkblue a
+{
+    color: white;
+    background-color: #28293E;
+    transition: background-color 200ms linear;
+}
+
+section.red
+{
+    color: white;
+    background-color: #EF6D58;
+    transition: background-color 200ms linear;
+}
+
+.red.button
+{
+    text-decoration: none;
+    color: white;
+    background-color: #C43721;
+    transition: background-color 200ms linear;
+}
+
+.white.button
+{
+    color: black;
+    background-color: white;
+    transition: background-color 200ms linear;
+}
+
+/* Font processing */
+.italic
+{
+    font-style: italic;
+}
+
+.pre, .button
+{
+    text-transform: uppercase;
+}
+
+.pre.red
+{
+    padding-bottom: 1rem;
+}
+
+/* Header and subheader */
+header
+{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header .container
+{
+    display: flex;
+    height: 4rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+header img, nav ul
+{
+    padding-right: 6rem;
+}
+
+nav
+{
+    height: 100%;
+}
+
+nav ul
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+    padding-top: 8px;
+}
+
+header .button
+{
+    border-radius: 0;
+}
+
+nav, nav li, nav a
+{
+    line-height: 3rem;
+    display: inline-block;
+}
+
+nav a:active, nav a:focus, nav a:hover
+{
+    color: white;
+    border-bottom: 4px solid #EF6D58;
+}
+
+.subheader, .flower-bg.subheader
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.flower-bg.subheader
+{
+    text-align: left;
+}
+
+.flower-bg.subheader::before
+{
+    content: "";
+    width: 100%;
+    background-image: url(../img/blog-header-bg.jpg);
+    background-size: 100%;
+    filter: opacity(20%) drop-shadow(0 0 0 darkblue);
+    height: 100%;
+    position: absolute;
+}
+
+.flower-bg.subheader h1
+{
+    text-align: center;
+    position: relative;
+}
+
+.flower-bg.subheader p
+{
+    text-align: center;
+    position: relative;
+}
+
+.subheader p, .flower-bg.subheader p
+{
+    margin: 3rem 20rem 3rem 20rem;
+}
+
+/* Article Sections */
+.title-and-description
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title-and-description h2
+{
+    padding-right: 4rem;
+}
+
+.title-and-description div
+{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.image-gallery
+{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.image-gallery img
+{
+    border-radius: 5px;
+}
+
+.image-gallery div
+{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columns
+{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 3rem;
+}
+
+.columns ~ p, .center
+{
+    text-align: center;
+}
+
+.picturelist
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    gap: 3rem;
+}
+
+.picturelist > *
+{
+    position: relative;
+}
+
+.picturelist .pic
+{
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 12rem;
+    position: relative;
+}
+
+.picturelist img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.picturelist p
+{
+    line-height: 2rem;
+    text-align: left;
+}
+
+.picturelist p::first-line
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.center h2
+{
+    padding-left: 21rem;
+    padding-right: 21rem;
+}
+
+.quote
+{
+    background-color: #FDF0E9;
+    color: #28293E;
+    border-radius: 5px;
+    margin: 2rem 17rem 2rem 17rem;
+    padding: 2rem 3rem 1rem 3rem;
+}
+
+blockquote
+{
+    text-align: justify;
+}
+
+.description-and-image
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.description-and-image div
+{
+    padding: 2rem;
+}
+
+.description-and-image p
+{
+    color: black;
+    margin-bottom: 3rem;
+}
+
+.about-author
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 3rem;
+}
+
+.about-author figure, .about-author div
+{
+    padding: 2rem;
+}
+
+.about-author figure
+{
+    border-right: 2px solid #F9E4D9;
+}
+
+.about-author figcaption
+{
+    padding-top: 1rem;
+    line-height: 1.3rem;
+    text-align: justify;
+}
+
+.about-author img
+{
+    border: 3px solid #C43721;
+}
+
+.text-with-images-right
+{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 2.2fr 1fr;
+}
+
+.text-with-images-right figure
+{
+    padding: 2rem;
+}
+
+.in-brief p
+{
+    margin-right: 40%;
+}
+
+table
+{
+    line-height: 3rem;
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 2px solid #EAEBE9;
+    text-align: center;
+}
+
+th
+{
+    background-color: #27283C;
+    color: white;
+}
+
+td
+{
+    background-color: white;
+    width: 33%;
+}
+
+th:not(:last-child), td:not(:last-child)
+{
+    border-right: 1px solid #D3D3D9;
+}
+
+tr:not(:last-child)
+{
+    border-bottom: 1px solid #D3D3D9;
+}
+
+.note
+{
+    font-size: 0.9rem;
+}
+
+ul .category 
+{
+    line-height: 1rem;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.category a
+{
+    display: inline-block;
+}
+
+.contact-info
+{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-info > div
+{
+    padding: 2rem;
+    border: 1px solid #F6DFD2;
+}
+
+.contact-info img
+{
+    width: 15px;
+}
+
+.contact-detail
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* Footer */
+.contact
+{
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #F9E4D9;
+}
+
+.contact p
+{
+    margin-top: 0.5rem;
+}
+
+.contact li
+{
+    padding-top: 0.5rem;
+}
+
+.contact div ul
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.legal
+{
+    line-height: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+}
+
+.legal ul
+{
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.legal li
+{
+    padding-left: 1rem;
+    display: inline-block;
+}
+
+/* Links */
+a, a:hover, a:focus, a:active
+{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: inherit;
+}
